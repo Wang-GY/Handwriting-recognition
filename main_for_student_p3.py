@@ -1,19 +1,17 @@
-import os
 import numpy as np
 import pickle
 import matplotlib
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
-
 
 # Definition of functions and parameters
 # for example
 EPOCH = 100
 
 # Read all data from .pkl
-(train_images, train_labels, test_images, test_labels) = pickle.load(open('./mnist_data/data.pkl', 'rb'),encoding='latin1')
-
+(train_images, train_labels, test_images, test_labels) = pickle.load(open('./mnist_data/data.pkl', 'rb'),
+                                                                     encoding='latin1')
 
 ### 1. Data preprocessing: normalize all pixels to [0,1) by dividing 256
 
@@ -27,7 +25,7 @@ loss = np.zeros((EPOCH))
 accuracy = np.zeros((EPOCH))
 
 for epoch in range(0, EPOCH):
-    print epoch
+    print(epoch)
 
 
     # Forward propagation
