@@ -42,14 +42,18 @@ if __name__ == '__main__':
     test_images = test_images / 256
 
     # #2. Weight initialization: Xavier
-    w1 = (np.random.rand(D_in, H1) - 0.5) * (6 ** 0.5) / (H1 + D_in) ** 0.5
-    w2 = (np.random.rand(H1, H2) - 0.5) * (6 ** 0.5) / (H2 + H1) ** 0.5
-    w3 = (np.random.rand(H2, D_out) - 0.5) * (6 ** 0.5) / (H2 + D_out) ** 0.5
+    w1 = (np.random.rand(D_in, H1) - 0.5) * ((6 / (H1 + D_in)) ** 0.5) * 2
+    w2 = (np.random.rand(H1, H2) - 0.5) * ((6 / (H1 + H2)) ** 0.5) * 2
+    w3 = (np.random.rand(H2, D_out) - 0.5) * ((6 / (H2 + D_out)) ** 0.5) * 2
 
-    b1 = (np.random.rand(H1, 1) - 0.5) * (6 ** 0.5) / (H1 + 1) ** 0.5
-    b2 = (np.random.rand(H2, 1) - 0.5) * (6 ** 0.5) / (H2 + 1) ** 0.5
-    b3 = (np.random.rand(D_out, 1) - 0.5) * (6 ** 0.5) / (D_out + 1) ** 0.5
-
+    b1 = (np.random.rand(H1, 1) - 0.5) * ((6 / (H1 + 1)) ** 0.5) * 2
+    b2 = (np.random.rand(H2, 1) - 0.5) * ((6 / (H2 + 1)) ** 0.5) * 2
+    b3 = (np.random.rand(D_out, 1) - 0.5) * ((6 / (1 + D_out)) ** 0.5) * 2
+    '''
+    b1 = np.zeros((H1, 1))
+    b2 = np.zeros((H2, 1))
+    b3 = np.zeros((D_out, 1))
+    '''
     # #test set:
     x1 = test_images
     y1 = test_labels
@@ -61,62 +65,69 @@ if __name__ == '__main__':
     loss = []
     n = int(len(train_images) / EPOCH)
     for epoch in range(0, n):
-        # if epoch > 50:
-        # learning_rate = 0.01
-        # create input and output
-        x = train_images[epoch * EPOCH:epoch * EPOCH + EPOCH]
-        y = train_labels[epoch * EPOCH:epoch * EPOCH + EPOCH]
-        y = one_hot(y)
+        for iter in range(0, n):
+            if iter > 50:
+                learning_rate = 0.01
 
-        # Forward propagation
-        h1 = (x.dot(w1).T + b1).T
-        h1 = np.maximum(h1, 0)
+            # create input and output
+            x = train_images[iter * EPOCH:iter * EPOCH + EPOCH]
+            t = train_labels[iter * EPOCH:iter * EPOCH + EPOCH]
+            t = one_hot(t)
 
-        h2 = (h1.dot(w2).T + b2).T
-        h2 = np.maximum(h2, 0)
+            # Forward propagation
+            a1 = (x.dot(w1).T + b1).T
+            z1 = np.maximum(a1, 0)
 
-        h3 = (h2.dot(w3).T + b3).T
-        h3 = softmax(h3)
+            a2 = (z1.dot(w2).T + b2).T
+            z2 = np.maximum(a2, 0)
 
-        e = -np.sum(y.dot(np.log(h3.T)))
-        loss.append(e / EPOCH)
-        l = e / EPOCH + 0.5 * lam * (np.sum(np.square(w1)) + np.sum(np.square(w2)) + np.sum(np.square(w3)))
-        # Back propagation
-        k3 = h3 - y
-        h2_f = np.where(h2 > 0, 1, 0)
-        k2 = k3.dot(w3.T) * h2_f
-        h1_f = np.where(h1 > 0, 1, 0)
-        k1 = k2.dot(w2.T) * h1_f
+            y = (z2.dot(w3).T + b3).T
+            y = softmax(y)
 
-        # Gradient update
-        w3 = w3 - learning_rate * h2.T.dot(k3) / EPOCH - learning_rate * lam * w3
-        b3 = b3 - (learning_rate * np.sum(k3, axis=0) / EPOCH).reshape(D_out, 1)
-        w2 = w2 - learning_rate * h1.T.dot(k2) / EPOCH - learning_rate * lam * w2
-        b2 = b2 - (learning_rate * np.sum(k2, axis=0) / EPOCH).reshape(H2, 1)
-        w1 = w1 - learning_rate * x.T.dot(k1) / EPOCH - learning_rate * lam * w1
-        b1 = b1 - (learning_rate * np.sum(k1, axis=0) / EPOCH).reshape(H1, 1)
+            if iter == n - 1:
+                e = -np.sum(t * np.log(y))
+                l = e / EPOCH
+                print('epoch%d loss:,%f' % (epoch, l))
+                loss.append(e / EPOCH)
+            # e = -np.trace(t.dot(np.log(y.T)))
+            # Back propagation
+            k3 = y - t
+            z2_f = np.where(a2 > 0, 1, 0)
+            k2 = k3.dot(w3.T) * z2_f
+            z1_f = np.where(a1 > 0, 1, 0)
+            k1 = k2.dot(w2.T) * z1_f
+
+            # Gradient update
+            w3 = w3 - learning_rate * z2.T.dot(k3) / EPOCH - learning_rate * lam * w3
+            b3 = b3 - (learning_rate * np.sum(k3, axis=0) / EPOCH).reshape(D_out, 1)
+            w2 = w2 - learning_rate * z1.T.dot(k2) / EPOCH - learning_rate * lam * w2
+            b2 = b2 - (learning_rate * np.sum(k2, axis=0) / EPOCH).reshape(H2, 1)
+            w1 = w1 - learning_rate * x.T.dot(k1) / EPOCH - learning_rate * lam * w1
+            b1 = b1 - (learning_rate * np.sum(k1, axis=0) / EPOCH).reshape(H1, 1)
 
         # Testing for accuracy
         # input:x1
         # output:h3
-        h1 = (x1.dot(w1).T + b1).T
-        h1 = np.maximum(h1, 0)
+        z1 = (x1.dot(w1).T + b1).T
+        z1 = np.maximum(z1, 0)
 
-        h2 = (h1.dot(w2).T + b2).T
-        h2 = np.maximum(h2, 0)
+        z2 = (z1.dot(w2).T + b2).T
+        z2 = np.maximum(z2, 0)
 
-        h3 = (h2.dot(w3).T + b3).T
-        h3 = softmax(h3)
+        y = (z2.dot(w3).T + b3).T
+
+        y = softmax(y)
 
         same_num = 0
-        a = np.zeros(np.shape(h3))
-        for row in range(np.shape(h3)[0]):
-            x = np.argmax(h3[row])
+        a = np.zeros(np.shape(y))
+        for row in range(np.shape(y)[0]):
+            x = np.argmax(y[row])
             a[row][x] = 1
             if y1[row][x] == 1:
                 same_num = same_num + 1
-
-        accuracy.append(same_num / np.shape(h3)[0])
+        ac = same_num / np.shape(y)[0]
+        print('epoch%d accuracy:%f' % (epoch, ac))
+        accuracy.append(ac)
 
     ### 4. Plot
     fig = plt.figure(figsize=(12, 5))
