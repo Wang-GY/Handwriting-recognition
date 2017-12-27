@@ -1,227 +1,227 @@
-epoch0 loss:,0.403100
-epoch0 accuracy:0.851000
-epoch1 loss:,0.351767
-epoch1 accuracy:0.861000
-epoch2 loss:,0.315647
-epoch2 accuracy:0.868000
-epoch3 loss:,0.288342
-epoch3 accuracy:0.873000
-epoch4 loss:,0.267008
-epoch4 accuracy:0.880000
-epoch5 loss:,0.250088
-epoch5 accuracy:0.879000
-epoch6 loss:,0.236142
-epoch6 accuracy:0.882000
-epoch7 loss:,0.224336
-epoch7 accuracy:0.885000
-epoch8 loss:,0.214235
-epoch8 accuracy:0.889000
-epoch9 loss:,0.205413
-epoch9 accuracy:0.891000
-epoch10 loss:,0.197645
-epoch10 accuracy:0.892000
-epoch11 loss:,0.190831
-epoch11 accuracy:0.895000
-epoch12 loss:,0.184797
-epoch12 accuracy:0.897000
-epoch13 loss:,0.179386
-epoch13 accuracy:0.899000
-epoch14 loss:,0.174459
-epoch14 accuracy:0.900000
-epoch15 loss:,0.170025
-epoch15 accuracy:0.901000
-epoch16 loss:,0.165910
-epoch16 accuracy:0.902000
-epoch17 loss:,0.162275
-epoch17 accuracy:0.903000
-epoch18 loss:,0.158874
-epoch18 accuracy:0.906000
-epoch19 loss:,0.155726
-epoch19 accuracy:0.905000
-epoch20 loss:,0.152722
-epoch20 accuracy:0.905000
-epoch21 loss:,0.149875
-epoch21 accuracy:0.903000
-epoch22 loss:,0.147189
-epoch22 accuracy:0.903000
-epoch23 loss:,0.144681
-epoch23 accuracy:0.906000
-epoch24 loss:,0.142259
-epoch24 accuracy:0.907000
-epoch25 loss:,0.139867
-epoch25 accuracy:0.908000
-epoch26 loss:,0.137568
-epoch26 accuracy:0.909000
-epoch27 loss:,0.135344
-epoch27 accuracy:0.910000
-epoch28 loss:,0.133308
-epoch28 accuracy:0.911000
-epoch29 loss:,0.131251
-epoch29 accuracy:0.912000
-epoch30 loss:,0.129266
-epoch30 accuracy:0.912000
-epoch31 loss:,0.127332
-epoch31 accuracy:0.912000
-epoch32 loss:,0.125480
-epoch32 accuracy:0.912000
-epoch33 loss:,0.123688
-epoch33 accuracy:0.913000
-epoch34 loss:,0.121943
-epoch34 accuracy:0.913000
-epoch35 loss:,0.120211
-epoch35 accuracy:0.913000
-epoch36 loss:,0.118533
-epoch36 accuracy:0.914000
-epoch37 loss:,0.116954
-epoch37 accuracy:0.915000
-epoch38 loss:,0.115375
-epoch38 accuracy:0.915000
-epoch39 loss:,0.113863
-epoch39 accuracy:0.915000
-epoch40 loss:,0.112301
-epoch40 accuracy:0.916000
-epoch41 loss:,0.110803
-epoch41 accuracy:0.917000
-epoch42 loss:,0.109348
-epoch42 accuracy:0.918000
-epoch43 loss:,0.107918
-epoch43 accuracy:0.919000
-epoch44 loss:,0.106516
-epoch44 accuracy:0.918000
-epoch45 loss:,0.105172
-epoch45 accuracy:0.918000
-epoch46 loss:,0.103824
-epoch46 accuracy:0.919000
-epoch47 loss:,0.102489
-epoch47 accuracy:0.919000
-epoch48 loss:,0.101315
-epoch48 accuracy:0.920000
-epoch49 loss:,0.100069
-epoch49 accuracy:0.920000
-epoch50 loss:,0.098885
-epoch50 accuracy:0.920000
-epoch51 loss:,0.097723
-epoch51 accuracy:0.922000
-epoch52 loss:,0.096518
-epoch52 accuracy:0.924000
-epoch53 loss:,0.095386
-epoch53 accuracy:0.924000
-epoch54 loss:,0.094331
-epoch54 accuracy:0.924000
-epoch55 loss:,0.093258
-epoch55 accuracy:0.924000
-epoch56 loss:,0.092212
-epoch56 accuracy:0.923000
-epoch57 loss:,0.091160
-epoch57 accuracy:0.923000
-epoch58 loss:,0.090164
-epoch58 accuracy:0.923000
-epoch59 loss:,0.089184
-epoch59 accuracy:0.923000
-epoch60 loss:,0.088230
-epoch60 accuracy:0.922000
-epoch61 loss:,0.087301
-epoch61 accuracy:0.923000
-epoch62 loss:,0.086362
-epoch62 accuracy:0.923000
-epoch63 loss:,0.085475
-epoch63 accuracy:0.923000
-epoch64 loss:,0.084600
-epoch64 accuracy:0.925000
-epoch65 loss:,0.083700
-epoch65 accuracy:0.925000
-epoch66 loss:,0.082826
-epoch66 accuracy:0.925000
-epoch67 loss:,0.081982
-epoch67 accuracy:0.925000
-epoch68 loss:,0.081127
-epoch68 accuracy:0.925000
-epoch69 loss:,0.080361
-epoch69 accuracy:0.925000
-epoch70 loss:,0.079608
-epoch70 accuracy:0.925000
-epoch71 loss:,0.078818
-epoch71 accuracy:0.925000
-epoch72 loss:,0.078109
-epoch72 accuracy:0.925000
-epoch73 loss:,0.077355
-epoch73 accuracy:0.925000
-epoch74 loss:,0.076689
-epoch74 accuracy:0.925000
-epoch75 loss:,0.075966
-epoch75 accuracy:0.927000
-epoch76 loss:,0.075289
-epoch76 accuracy:0.927000
-epoch77 loss:,0.074579
-epoch77 accuracy:0.927000
-epoch78 loss:,0.073927
-epoch78 accuracy:0.928000
-epoch79 loss:,0.073251
-epoch79 accuracy:0.928000
-epoch80 loss:,0.072585
-epoch80 accuracy:0.928000
-epoch81 loss:,0.071942
-epoch81 accuracy:0.928000
-epoch82 loss:,0.071255
-epoch82 accuracy:0.928000
-epoch83 loss:,0.070675
-epoch83 accuracy:0.929000
-epoch84 loss:,0.070058
-epoch84 accuracy:0.929000
-epoch85 loss:,0.069429
-epoch85 accuracy:0.929000
-epoch86 loss:,0.068837
-epoch86 accuracy:0.928000
-epoch87 loss:,0.068250
-epoch87 accuracy:0.929000
-epoch88 loss:,0.067641
-epoch88 accuracy:0.929000
-epoch89 loss:,0.067044
-epoch89 accuracy:0.930000
-epoch90 loss:,0.066441
-epoch90 accuracy:0.930000
-epoch91 loss:,0.065885
-epoch91 accuracy:0.931000
-epoch92 loss:,0.065310
-epoch92 accuracy:0.932000
-epoch93 loss:,0.064726
-epoch93 accuracy:0.931000
-epoch94 loss:,0.064190
-epoch94 accuracy:0.931000
-epoch95 loss:,0.063658
-epoch95 accuracy:0.932000
-epoch96 loss:,0.063103
-epoch96 accuracy:0.932000
-epoch97 loss:,0.062586
-epoch97 accuracy:0.932000
-epoch98 loss:,0.062078
-epoch98 accuracy:0.932000
-epoch99 loss:,0.061531
-epoch99 accuracy:0.932000
-[ 0.40310033  0.35176742  0.31564684  0.28834209  0.26700789  0.25008772
-  0.23614192  0.22433564  0.21423521  0.20541295  0.19764506  0.19083125
-  0.18479676  0.17938555  0.17445906  0.17002494  0.1659104   0.16227479
-  0.15887383  0.1557258   0.15272214  0.1498754   0.14718943  0.14468142
-  0.1422592   0.13986685  0.13756771  0.13534375  0.13330765  0.13125103
-  0.12926566  0.12733245  0.12548016  0.12368767  0.12194293  0.1202115
-  0.11853329  0.11695428  0.11537488  0.11386326  0.11230081  0.11080299
-  0.10934805  0.1079185   0.10651594  0.10517201  0.10382444  0.10248917
-  0.10131536  0.10006892  0.09888544  0.09772321  0.09651801  0.09538587
-  0.09433128  0.09325833  0.09221206  0.09115959  0.09016376  0.08918403
-  0.08822955  0.08730126  0.08636202  0.0854754   0.08459998  0.08370014
-  0.08282624  0.08198209  0.08112724  0.08036101  0.07960815  0.07881815
-  0.07810925  0.07735532  0.07668896  0.07596567  0.07528936  0.07457932
-  0.07392676  0.07325061  0.07258527  0.0719419   0.0712548   0.07067488
-  0.07005815  0.06942925  0.06883651  0.06825002  0.06764116  0.06704387
-  0.06644115  0.06588526  0.06530953  0.06472569  0.06419021  0.0636576
-  0.0631026   0.06258643  0.06207813  0.06153058]
-[ 0.851  0.861  0.868  0.873  0.88   0.879  0.882  0.885  0.889  0.891
-  0.892  0.895  0.897  0.899  0.9    0.901  0.902  0.903  0.906  0.905
-  0.905  0.903  0.903  0.906  0.907  0.908  0.909  0.91   0.911  0.912
-  0.912  0.912  0.912  0.913  0.913  0.913  0.914  0.915  0.915  0.915
-  0.916  0.917  0.918  0.919  0.918  0.918  0.919  0.919  0.92   0.92   0.92
-  0.922  0.924  0.924  0.924  0.924  0.923  0.923  0.923  0.923  0.922
-  0.923  0.923  0.923  0.925  0.925  0.925  0.925  0.925  0.925  0.925
-  0.925  0.925  0.925  0.925  0.927  0.927  0.927  0.928  0.928  0.928
-  0.928  0.928  0.929  0.929  0.929  0.928  0.929  0.929  0.93   0.93
-  0.931  0.932  0.931  0.931  0.932  0.932  0.932  0.932  0.932]
+epoch0 loss: 0.291560
+epoch0 accuracy: 0.857000
+epoch1 loss: 0.200663
+epoch1 accuracy: 0.889000
+epoch2 loss: 0.158472
+epoch2 accuracy: 0.901000
+epoch3 loss: 0.130021
+epoch3 accuracy: 0.910000
+epoch4 loss: 0.108751
+epoch4 accuracy: 0.913000
+epoch5 loss: 0.093455
+epoch5 accuracy: 0.918000
+epoch6 loss: 0.081124
+epoch6 accuracy: 0.921000
+epoch7 loss: 0.072252
+epoch7 accuracy: 0.924000
+epoch8 loss: 0.064659
+epoch8 accuracy: 0.927000
+epoch9 loss: 0.058455
+epoch9 accuracy: 0.932000
+epoch10 loss: 0.053272
+epoch10 accuracy: 0.933000
+epoch11 loss: 0.049217
+epoch11 accuracy: 0.934000
+epoch12 loss: 0.045838
+epoch12 accuracy: 0.939000
+epoch13 loss: 0.042384
+epoch13 accuracy: 0.939000
+epoch14 loss: 0.040011
+epoch14 accuracy: 0.940000
+epoch15 loss: 0.036608
+epoch15 accuracy: 0.939000
+epoch16 loss: 0.034469
+epoch16 accuracy: 0.941000
+epoch17 loss: 0.031576
+epoch17 accuracy: 0.941000
+epoch18 loss: 0.029959
+epoch18 accuracy: 0.941000
+epoch19 loss: 0.027555
+epoch19 accuracy: 0.942000
+epoch20 loss: 0.025532
+epoch20 accuracy: 0.940000
+epoch21 loss: 0.024019
+epoch21 accuracy: 0.942000
+epoch22 loss: 0.022574
+epoch22 accuracy: 0.942000
+epoch23 loss: 0.021150
+epoch23 accuracy: 0.942000
+epoch24 loss: 0.019855
+epoch24 accuracy: 0.943000
+epoch25 loss: 0.018781
+epoch25 accuracy: 0.944000
+epoch26 loss: 0.017777
+epoch26 accuracy: 0.943000
+epoch27 loss: 0.016901
+epoch27 accuracy: 0.943000
+epoch28 loss: 0.015972
+epoch28 accuracy: 0.943000
+epoch29 loss: 0.015147
+epoch29 accuracy: 0.943000
+epoch30 loss: 0.014594
+epoch30 accuracy: 0.943000
+epoch31 loss: 0.013928
+epoch31 accuracy: 0.943000
+epoch32 loss: 0.013311
+epoch32 accuracy: 0.943000
+epoch33 loss: 0.012680
+epoch33 accuracy: 0.943000
+epoch34 loss: 0.012304
+epoch34 accuracy: 0.943000
+epoch35 loss: 0.011860
+epoch35 accuracy: 0.943000
+epoch36 loss: 0.011531
+epoch36 accuracy: 0.943000
+epoch37 loss: 0.011156
+epoch37 accuracy: 0.944000
+epoch38 loss: 0.010842
+epoch38 accuracy: 0.945000
+epoch39 loss: 0.010527
+epoch39 accuracy: 0.945000
+epoch40 loss: 0.010235
+epoch40 accuracy: 0.945000
+epoch41 loss: 0.010033
+epoch41 accuracy: 0.945000
+epoch42 loss: 0.009796
+epoch42 accuracy: 0.946000
+epoch43 loss: 0.009581
+epoch43 accuracy: 0.946000
+epoch44 loss: 0.009367
+epoch44 accuracy: 0.946000
+epoch45 loss: 0.009151
+epoch45 accuracy: 0.946000
+epoch46 loss: 0.008944
+epoch46 accuracy: 0.946000
+epoch47 loss: 0.008806
+epoch47 accuracy: 0.947000
+epoch48 loss: 0.008657
+epoch48 accuracy: 0.947000
+epoch49 loss: 0.008494
+epoch49 accuracy: 0.947000
+epoch50 loss: 0.008354
+epoch50 accuracy: 0.947000
+epoch51 loss: 0.008749
+epoch51 accuracy: 0.945000
+epoch52 loss: 0.008937
+epoch52 accuracy: 0.945000
+epoch53 loss: 0.009003
+epoch53 accuracy: 0.946000
+epoch54 loss: 0.009046
+epoch54 accuracy: 0.946000
+epoch55 loss: 0.009065
+epoch55 accuracy: 0.946000
+epoch56 loss: 0.009078
+epoch56 accuracy: 0.946000
+epoch57 loss: 0.009087
+epoch57 accuracy: 0.946000
+epoch58 loss: 0.009086
+epoch58 accuracy: 0.946000
+epoch59 loss: 0.009084
+epoch59 accuracy: 0.946000
+epoch60 loss: 0.009078
+epoch60 accuracy: 0.946000
+epoch61 loss: 0.009074
+epoch61 accuracy: 0.946000
+epoch62 loss: 0.009064
+epoch62 accuracy: 0.946000
+epoch63 loss: 0.009045
+epoch63 accuracy: 0.946000
+epoch64 loss: 0.009034
+epoch64 accuracy: 0.946000
+epoch65 loss: 0.009021
+epoch65 accuracy: 0.946000
+epoch66 loss: 0.008999
+epoch66 accuracy: 0.946000
+epoch67 loss: 0.008986
+epoch67 accuracy: 0.946000
+epoch68 loss: 0.008960
+epoch68 accuracy: 0.946000
+epoch69 loss: 0.008939
+epoch69 accuracy: 0.946000
+epoch70 loss: 0.008929
+epoch70 accuracy: 0.946000
+epoch71 loss: 0.008904
+epoch71 accuracy: 0.946000
+epoch72 loss: 0.008887
+epoch72 accuracy: 0.946000
+epoch73 loss: 0.008864
+epoch73 accuracy: 0.946000
+epoch74 loss: 0.008853
+epoch74 accuracy: 0.946000
+epoch75 loss: 0.008826
+epoch75 accuracy: 0.946000
+epoch76 loss: 0.008809
+epoch76 accuracy: 0.946000
+epoch77 loss: 0.008791
+epoch77 accuracy: 0.946000
+epoch78 loss: 0.008771
+epoch78 accuracy: 0.946000
+epoch79 loss: 0.008756
+epoch79 accuracy: 0.946000
+epoch80 loss: 0.008727
+epoch80 accuracy: 0.946000
+epoch81 loss: 0.008711
+epoch81 accuracy: 0.946000
+epoch82 loss: 0.008691
+epoch82 accuracy: 0.946000
+epoch83 loss: 0.008672
+epoch83 accuracy: 0.946000
+epoch84 loss: 0.008648
+epoch84 accuracy: 0.946000
+epoch85 loss: 0.008635
+epoch85 accuracy: 0.946000
+epoch86 loss: 0.008615
+epoch86 accuracy: 0.946000
+epoch87 loss: 0.008597
+epoch87 accuracy: 0.946000
+epoch88 loss: 0.008575
+epoch88 accuracy: 0.946000
+epoch89 loss: 0.008558
+epoch89 accuracy: 0.946000
+epoch90 loss: 0.008538
+epoch90 accuracy: 0.946000
+epoch91 loss: 0.008524
+epoch91 accuracy: 0.946000
+epoch92 loss: 0.008497
+epoch92 accuracy: 0.946000
+epoch93 loss: 0.008486
+epoch93 accuracy: 0.946000
+epoch94 loss: 0.008464
+epoch94 accuracy: 0.946000
+epoch95 loss: 0.008448
+epoch95 accuracy: 0.946000
+epoch96 loss: 0.008430
+epoch96 accuracy: 0.946000
+epoch97 loss: 0.008416
+epoch97 accuracy: 0.946000
+epoch98 loss: 0.008395
+epoch98 accuracy: 0.946000
+epoch99 loss: 0.008380
+epoch99 accuracy: 0.946000
+[ 0.29156046  0.20066324  0.15847217  0.13002132  0.1087514   0.09345524
+  0.08112385  0.07225223  0.06465864  0.05845509  0.05327157  0.04921653
+  0.04583762  0.042384    0.04001072  0.03660768  0.03446918  0.03157615
+  0.02995888  0.02755504  0.02553181  0.02401921  0.02257437  0.02114998
+  0.01985531  0.01878098  0.01777737  0.01690084  0.01597206  0.01514724
+  0.01459367  0.0139277   0.01331114  0.0126797   0.01230368  0.01185954
+  0.01153063  0.01115566  0.01084177  0.0105269   0.01023468  0.01003305
+  0.00979601  0.00958081  0.00936661  0.00915146  0.00894372  0.00880623
+  0.00865684  0.00849364  0.00835445  0.00874926  0.00893731  0.00900336
+  0.00904597  0.00906541  0.00907799  0.00908654  0.00908604  0.00908431
+  0.00907833  0.00907418  0.0090639   0.00904494  0.00903425  0.00902097
+  0.00899884  0.00898591  0.00896009  0.00893943  0.00892871  0.00890409
+  0.00888726  0.00886415  0.00885305  0.00882646  0.00880883  0.00879141
+  0.00877058  0.00875591  0.00872741  0.0087111   0.0086911   0.00867194
+  0.00864767  0.00863524  0.00861521  0.00859727  0.0085745   0.0085584
+  0.00853812  0.00852431  0.0084966   0.00848575  0.00846359  0.00844756
+  0.00842999  0.00841554  0.00839506  0.00837962]
+[ 0.857  0.889  0.901  0.91   0.913  0.918  0.921  0.924  0.927  0.932
+  0.933  0.934  0.939  0.939  0.94   0.939  0.941  0.941  0.941  0.942
+  0.94   0.942  0.942  0.942  0.943  0.944  0.943  0.943  0.943  0.943
+  0.943  0.943  0.943  0.943  0.943  0.943  0.943  0.944  0.945  0.945
+  0.945  0.945  0.946  0.946  0.946  0.946  0.946  0.947  0.947  0.947
+  0.947  0.945  0.945  0.946  0.946  0.946  0.946  0.946  0.946  0.946
+  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946
+  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946
+  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946
+  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946  0.946]

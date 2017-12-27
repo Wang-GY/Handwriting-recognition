@@ -65,10 +65,9 @@ if __name__ == '__main__':
     loss = []
     n = int(len(train_images) / EPOCH)
     for epoch in range(0, n):
+        if epoch > 50:
+            learning_rate = 0.01
         for iter in range(0, n):
-            if iter > 50:
-                learning_rate = 0.01
-
             # create input and output
             x = train_images[iter * EPOCH:iter * EPOCH + EPOCH]
             t = train_labels[iter * EPOCH:iter * EPOCH + EPOCH]
@@ -87,7 +86,7 @@ if __name__ == '__main__':
             if iter == n - 1:
                 e = -np.sum(t * np.log(y))
                 l = e / EPOCH
-                print('epoch%d loss:,%f' % (epoch, l))
+                print('epoch%d loss: %f' % (epoch, l))
                 loss.append(e / EPOCH)
             # e = -np.trace(t.dot(np.log(y.T)))
             # Back propagation
@@ -126,7 +125,7 @@ if __name__ == '__main__':
             if y1[row][x] == 1:
                 same_num = same_num + 1
         ac = same_num / np.shape(y)[0]
-        print('epoch%d accuracy:%f' % (epoch, ac))
+        print('epoch%d accuracy: %f' % (epoch, ac))
         accuracy.append(ac)
 
     ### 4. Plot
